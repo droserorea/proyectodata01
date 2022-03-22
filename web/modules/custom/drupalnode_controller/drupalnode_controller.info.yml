@@ -1,5 +1,0 @@
-name: "Drupal Node Controller"
-type: module
-description: "Controller Drupal Node"
-core_version_requirement: ^8.8 || ^9
-package: "Custom"

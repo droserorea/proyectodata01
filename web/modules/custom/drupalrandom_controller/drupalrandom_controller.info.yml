@@ -1,5 +1,0 @@
-name: "Drupal Random Controller with template"
-type: module
-description: "Random Controller with template"
-core_version_requirement: ^8.8 || ^9
-package: "Custom"

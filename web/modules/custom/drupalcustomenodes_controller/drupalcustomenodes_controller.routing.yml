@@ -1,7 +1,0 @@
-drupalcustomenodes.customnodes_create:
-  path: '/customenode/create'
-  defaults:
-    _controller: '\Drupal\drupalcustomenodes_controller\Controller\CreateContentTypesController::createct'
-    _title: 'Create Custom Content Types'
-  requirements:
-    _access: 'TRUE'

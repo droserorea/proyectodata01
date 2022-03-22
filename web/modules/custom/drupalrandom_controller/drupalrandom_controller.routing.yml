@@ -1,7 +1,0 @@
-drupalrandom_controller.data_user:
-  path: '/datauser/view'
-  defaults:
-    _controller: '\Drupal\drupalrandom_controller\Controller\DrupalrandomController::page'
-    _title: 'Datos de controller Drupalrandom'
-  requirements:
-    _access: 'TRUE'

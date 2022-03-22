@@ -1,5 +1,0 @@
-name: "Custome form DrupalData V01"
-type: module
-description: "Custome DruapalData form from code"
-core_version_requirement: ^8.8 || ^9
-package: "Custom"
