@@ -1,0 +1,7 @@
+drupaldata_form.form:
+  path: '/drupaldata/form'
+  defaults:
+    _form: '\Drupal\drupaldata_form\Form\DrupaldataForm'
+    _title: 'DrupalData Custom form'
+  requirements:
+    _permission: 'TRUE'

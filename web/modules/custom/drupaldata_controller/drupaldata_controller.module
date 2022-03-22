@@ -1,0 +1,21 @@
+<?php
+
+function drupaldata_controller_theme($existing, $type, $theme, $path)
+{
+  return array(
+    'data_list' => array(
+//      'variables'=> array('items'=> array(), 'code'=>'','title'=>'')
+      'variables' => array(
+        'name'=>'text name',
+        'email'=>'text email',
+        'phone'=>'text phone',
+        'gender'=>'text gender',
+        'picture'=>'text picture',
+        'bday'=>'text dbay',
+        'password'=>'text password',
+        'location'=>'text location'
+      )
+    )
+  );
+
+}

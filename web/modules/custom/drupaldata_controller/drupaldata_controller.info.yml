@@ -1,0 +1,5 @@
+name: "Drupal Data Controller with template"
+type: module
+description: "Drupal Data Controller with template"
+core_version_requirement: ^8.8 || ^9
+package: "Custom"

@@ -1,0 +1,5 @@
+name: Custome node
+type: module
+description: "Try to add a node by code"
+core_version_requirement: ^8.8 || ^9
+package: "Custom"

@@ -1,0 +1,7 @@
+drupaldata_controller.data_list:
+  path: '/drupaldata/view'
+  defaults:
+    _controller: '\Drupal\drupaldata_controller\Controller\DruapaldataController::page'
+    _title: 'Drupaldata - Route'
+  requirements:
+    _access: 'TRUE'

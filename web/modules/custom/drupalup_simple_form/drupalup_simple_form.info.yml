@@ -1,0 +1,5 @@
+name: "Drupal Simple Custom Form"
+type: module
+description: "Custom Simple Form"
+core_version_requirement: ^8.8 || ^9
+package: "Custom"

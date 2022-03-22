@@ -1,0 +1,5 @@
+name: "Custome form from code"
+type: module
+description: "Custome form from code"
+core_version_requirement: ^8.8 || ^9
+package: "Custom"
