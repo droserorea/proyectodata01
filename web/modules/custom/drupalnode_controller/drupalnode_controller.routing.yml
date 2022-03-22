@@ -1,0 +1,7 @@
+drupalnode.node_create:
+  path: '/node/create'
+  defaults:
+    _controller: '\Drupal\drupalnode_controller\Controller\CreateController::create'
+    _title: 'Create node - Title'
+  requirements:
+    _access: 'TRUE'

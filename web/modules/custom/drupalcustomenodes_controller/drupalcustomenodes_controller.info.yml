@@ -1,0 +1,5 @@
+name: "Create Content Types from code"
+type: module
+description: "Create Content Types from code - User / Location"
+core_version_requirement: ^8.8 || ^9
+package: "Custom"

@@ -1,0 +1,58 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://pm1.narvii.com/6523/65c5f0267adc129e0132216fd25aa5d95eb690b9_hq.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Users Content Type</h5>
+        <p>User Random Data.</p>
+      </div>
+    </div>
+{#    {% if title %}#}
+{#      <h3 style="background-color: red">{{ title }}</h3>#}
+{#    {% endif %}#}
+    {% for row in rows %}
+      {% set row_classes = [
+        default_row_class ? 'views-row',
+      ] %}
+      {#      <div{{ row.attributes.addClass(row_classes) }} style="background-color: #979797"> #}
+      {#        {{ row.content }} #}
+      {#      </div> #}
+      <div class="carousel-item" {{ row.attributes.addClass(row_classes) }} style="background-color: #979797">
+{#        <img src="..." class="d-block w-100" alt="...">#}
+        <div class="carousel-caption d-none d-md-block">
+{#          <h5>{{ row.content.title }}</h5>#}
+          <p>{{ row.content }}</p>
+        </div>
+      </div>
+    {% endfor %}
+    {#    <div class="carousel-item"> #}
+    {#      <img src="..." class="d-block w-100" alt="..."> #}
+    {#    </div> #}
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
